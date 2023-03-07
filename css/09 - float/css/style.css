@@ -1,0 +1,77 @@
+ul,li{ 
+  margin: 0;
+  padding: 0;
+} /*기본적으로 마진 ,패딩이 적용되어있기 때문에 0으로 만들어주고 시작한다.*/
+
+li{
+  list-style: none;
+} /* 화면에 점을 없애준다.*/
+
+.container1{
+  background: pink;
+  width: 980px;
+  margin: 30px auto;
+  padding-top: 20px;
+  border: 1px solid black;
+}
+
+.container1 li{
+
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.container1 .box{
+  width: 300px; 
+}
+
+.container1 .wbow{
+  width: 300px;
+
+}
+
+.container1 .box1,
+.container1 .box2,
+.container1 .box3,
+.container1 .box4,
+.container1 .box5,
+.container1 .box6,
+.container1 .box7,
+.container1 .box8,
+.container1 .box9{
+  float: left;
+} /* 얘는 무조건 수평 배치(row)가 목적 ! 옆으로 서라!!! / 플롯은 자식들한테 주는거다.
+  left / right / none  / 먼저 나온 애들이 왼쪽 / 오른쪽 /기본값은 none /
+  자식들이 float이 적용되면 부모(ul)의 높이가 사라진다. */
+
+/*  .container1 .box3{
+  clear: both; 클리어 보스가 되면 부모가 자식의 높이를 다시 인식함. / 얘까지는 인식해줌 
+                플롯이 나왔으면 그 다음엔 무조건 클리어보스를 해줘야 부모가 높이를 인식해준다!
+} */
+
+
+/*.container1::after{ /* 클리어픽스*/
+  /*content: "";
+  display: block;
+  clear: both; /* 디스플레이 레벨이 블럭인 애들만 가능하다.*/
+/* 가상 엘리먼트를 만들어서 클리어 보스를 넣겠다 ! 
+  가상 요소는 기본적으로 인라인레벨이라 블록레벨로 바꾸어주고나서 해야한다.*/
+
+.container1 .box3{
+  clear: both; /* 내 위쪽의 형들하고만 스기 싫다 !*/
+  float: left; /* 동생들하고는 사이좋게 옆에서 잘 지내고싶다. */
+}
+
+.container1 .box7{
+  float: right;
+  margin-right: 20px;
+}
+
+
+.container2{
+  background: pink;
+  width: 980px;
+  margin: 30px auto;
+  padding-top: 20px;
+  border: 1px solid black;
+}

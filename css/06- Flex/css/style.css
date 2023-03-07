@@ -1,0 +1,195 @@
+/* auto는 블록레벨만 가능 */
+/* div는 블록레벨이라 넓이 줄 수 있음 */
+.ex1 {
+  display: flex;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.ex1 div {
+  background-color: rgb(226, 226, 226);
+}
+
+.ex1 span {
+  /* 절대 flex 아래에 display를 넣지마 */
+  width: 100px;
+  margin-left: auto;
+  background-color: rgb(150, 190, 236);
+}
+
+.ex2 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  flex-direction: row;
+  border: 1px solid salmon;
+}
+
+.ex2 span {
+  background: pink;
+}
+
+.ex3 {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid palevioletred;
+}
+
+/* 순서를 정해서 쓰는 게 좋아요 */
+
+.ex3 span {
+  background-color: pink;
+}
+
+.ex3 span:nth-child(1) {
+  margin-left: 250px;
+}
+
+.ex3 span:nth-child(2) {
+  margin-left: 200px;
+}
+
+.ex3 span:nth-child(3) {
+  margin-left: 150px;
+}
+
+.ex4 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid slateblue;
+}
+
+.ex4 div {
+  background-color: lightcoral;
+}
+
+.ex5{
+  display: flex;
+  margin-top: auto;
+  align-items: end;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid salmon;
+}
+
+.ex5 div{
+  background-color: pink;
+  border: 1px solid lightcoral;
+}
+.ex5 :nth-child(1){height: 50px;
+margin: auto;
+}
+.ex5 :nth-child(2){height: 100px;
+}
+.ex5 :nth-child(3){height: 150px;
+}                   
+
+.ex6{
+  display: flex;
+  justify-content: row-reverse;
+  align-items: flex-start;/* 디폴트값 stretch, 축의 위치를 바꾸고 개체의 값을 지움(?) */
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid blueviolet;
+
+}
+
+.ex6 div{
+  background-color: pink;
+  border: 1px solid salmon;
+}
+
+.ex7{
+  display: flex;/* flex-direction: row */
+  justify-content: center;/* 오뎅이 가운데 */
+  align-items: center; /* 축이 가운데 */
+  align-content: center;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid rgb(150, 190, 236)
+}
+
+.ex7 div{
+  border:1px solid skyblue;
+}
+.ex7 div:nth-child(2){
+  margin:0 5px
+}/* 이경우 사이의 여백은 10px이 된다(양쪽div가 서로 밀은 거라서) */
+
+.ex8{
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid pink;
+}
+
+.ex8 div{
+  flex:1;
+  border: 1px solid salmon;
+}
+
+.ex8 :nth-child(1){
+  flex:3;
+}
+
+.ex9{
+  display: flex;
+  /* flex-direction: row */
+  /* align-items: stretch; 기본값*/ 
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid slateblue;
+}
+.ex9 > div{
+ 
+  width: 200px;
+  border: 1px solid salmon;
+}
+
+.ex9 h3{
+  background-color: bisque;
+}
+
+.ex9 p{
+  flex:1;
+  background-color: rgb(178, 213, 214);
+}
+
+.ex10{
+ display: flex;
+ flex-wrap:wrap ;
+ justify-content: center;
+  width: 500px;
+  margin: 0 auto;    
+  border:1px solid salmon;
+}
+.ex10 div{
+  width:33.33%;
+  box-sizing: border-box;
+  border: 1px solid pink;
+}
+
+.ex11{
+  width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: thistle;
+}
+
+.ex11 > div{
+  border:5px solid skyblue
+}

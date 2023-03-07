@@ -1,0 +1,124 @@
+/*
+.box1{
+  position: absolute;
+  top:calc(15% - 20px);
+  left: calc(20% - 20px);
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background: red;
+}
+
+.box1 .box4{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: 0;
+  background: yellow;
+}
+
+.box1 .box5{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  background: yellow;
+}
+
+
+
+.box2{
+  position: absolute;
+  top:calc(32% - 30px);
+  left: calc(37% - 37px);
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background: skyblue;
+}
+
+.box2 .box6{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: 0;
+  background: yellow;
+}
+
+.box2 .box7{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  background: yellow;
+}
+
+
+.box3{
+  position: absolute;
+  top:calc(49% - 40px);
+  left: calc(55% - 50px);
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background: blue;
+}
+
+.box3 .box8{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: 0;
+  background: yellow;
+}
+
+.box3 .box9{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  background: yellow;
+}
+*/
+.a{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.a1{
+  background: red;
+  right: 50%;
+  bottom: 50%;
+}
+
+.a2{
+  background: skyblue;
+  left:calc(50% - 150px);
+  top: calc(50% - 150px);
+}
+
+.a3{
+  background: blue;
+  left: 50%;
+  top: 50%;
+}
+
+
+.a div{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+
+.a div:first-child{
+  margin-top: auto;
+}

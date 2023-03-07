@@ -1,0 +1,85 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-size: 16px;}
+body *{
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.container1{
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  margin: 30px auto;
+  justify-content: space-between;
+  
+}
+
+.container1 > div > a{
+  display: block;
+}
+
+.container1 > div{
+  width: 20%;
+  
+}
+
+.container2{
+  display: flex;
+  flex-wrap: wrap; /* 여러줄을할때 */
+  width: 1000px;
+  margin: 30px auto;
+  justify-content: space-between; /* 오뎅들 위치를 벌리는것*/
+}
+
+.container2 > div{
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  margin-bottom:  40px;
+}
+
+.container2 > div:nth-child(2) ~ div{
+  margin-bottom: 0;
+}
+.container2 > div > p{
+  flex:1;
+  margin: 10px 0; /* 위 아래로 떨어져줘 */
+}
+
+
+.container3{
+  display: flex;
+  width: 1000px;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.container3 > div {
+  width: 30%;
+  margin: 0 10px;
+}
+
+.container3 > div:first-child{
+  display: flex;
+  flex-direction: column;
+}
+
+.container3 > div:first-child > p{
+  flex: 1;
+}
+.container3 > div:last-child > div{
+  display: block;
+}
+
+.container3 > div:last-child > div:first-child{
+  margin-bottom: 10px;
+}
+.container3 > div > p{
+  margin: 10px ;
+}
+
+
+
+
+
+/* 이하부분 작성------------------------------ */
+

@@ -1,0 +1,62 @@
+.ex1 div span.style{
+  color:red;
+}
+
+
+
+/* .ex1 div span:first-child {
+  color:red;
+} */
+
+.ex2 * *{
+  color: red;
+}
+
+/*
+.ex3 div ~ div {
+  color: red;
+}
+4,5,6만 빨갛게
+*/
+
+.ex3 p + div *{
+  color: red;
+}
+/* 1.2.3만 빨갛게*/
+
+.ex4 div :last-of-type{
+  color: red;
+}
+/* div전부에서 첫번째 자식들만 빨갛게*/
+
+.ex5 div :last-child{
+  color: red;
+}
+
+.ex6 div:nth-child(3) *{
+  background-color: yellow;
+}
+
+.ex7 b:nth-last-child(2){
+  background-color: yellow;
+}
+
+.ex8 div:nth-last-child(4) ~ *{
+  background-color: yellow;
+}
+
+.ex9 div:nth-child(odd){
+  background-color: red;
+}
+
+.ex10 div:first-of-type :not(q){
+  background-color: red;
+}/*첫번째 줄의 1.2.3의 배경색만 빨갛게*/
+
+.ex11 [href]{
+  background-color: red;
+}
+
+.ex12 a[href*="http"]{
+  background-color: red;
+}

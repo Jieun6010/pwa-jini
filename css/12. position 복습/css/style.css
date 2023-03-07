@@ -1,0 +1,85 @@
+html{
+  scroll-behavior: smooth;
+}
+header{
+  position: fixed;
+  /* 브라우저기준으로 좌표를 잡아서 브라우저에 딱 붙어이따 상위 고정된 네비게이션을 만들때 많이 사용한다. */
+  left: 0;
+  top: 0;
+  background: plum;
+  width: 100%;
+}
+
+.section1{
+  background: gold;
+}
+
+.section2{
+  background: peru;
+}
+
+.section3{
+  background: paleturquoise;
+}
+
+
+
+
+
+
+
+/* ex1 -------------------------------------------------------------- */
+.ex1{
+  font-size: 50px;
+  width: 500px;
+  margin: 0 auto;
+  font-weight: bold;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.ex1 div{
+  position: relative;
+  display: inline-block;
+  background: gray;
+}
+
+.ex1 div .red{
+  position: absolute;
+  color: red;
+  left: 0;
+  overflow: hidden;
+  height: 50%; /* 높이의 퍼센트는 부모에 높이가 있어야 높이설정이 가능한데 포지션:앱솔루트랑 픽스드일 경우에는 지정할 수 있다.*/
+  left: 0;
+}
+
+
+/* ex2 --------------------------------------------------------------- */
+.ex2{
+  display: flex;
+  width: 900px;
+  border: 1px solid black;
+  margin: 30px auto;
+}
+
+.ex2 div{
+  position: relative;
+  background: pink;
+  flex:1;
+  height: 100px;
+  margin: 20px;
+}
+
+.ex2 div::before{ /* 6개의 div앞쪽에 무엇을 만들고싶다.*/
+  position: absolute;
+  /*display: inline-block; 포지션이 들어갔는데 디스플레이를 쓰는건 정말..의미없는 코딩 ! */
+  content: '';
+  width: 30px;
+  height: 30px;
+  background:red; /* 가상엘리먼트는 인라인레벨이라 크기  설정 X*/
+  border-radius: 50%;
+  left: calc(50% - 15px);
+  top: -15px;
+}
+
+

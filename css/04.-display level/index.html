@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>display level</h1>
+    <section class="section1">
+      <h2>출력레벨(방식)</h2>
+      <article>
+        <h3>block level</h3>
+
+        <ul>
+          <li>한 줄을 통째로 차지하는 출력요소</li>
+          <li>크기속성을 가질 수 있다.(width/higth)</li>
+        </ul>
+      </article>
+      <article>
+        <h3>inline level</h3>
+        <ul>
+          <li>한줄로 출력되는 요소</li>
+          <li>크기속성이 적용되지 않는다.</li>
+          <li>a,span,small,em,strong,i,label 등등~</li>
+        </ul>
+        <span>span</span>
+        <b>bold</b>
+      </article>
+
+      <article>
+        <h3>liline-block 무조껀 암기하자!!</h3>
+        <ul>
+          <li>한줄로 출력되는 요소</li>
+          <li>크기 속성이 적용됨</li>
+          <li>
+            main,section/article,header,footer,nav,div,
+            ul,ol,dl,li,dt,dd,
+            h1~h6,p,form,table 등등~
+          </li>
+          <li>
+            img,input,select,textarea,iframe,svg,video 얘들만 알아도 코딩하는데 큰 어려움 없음
+          </li>
+        </ul>
+      </article>
+
+    </section>
+    <hr>
+    <section>
+      <h2>디스플레이레벨과 정렬</h2>
+      <article>
+        <h3>인라인레벨의 수직, 수평정렬</h3>
+        <ul>
+          <li>vertical-alingn ( top , bottom , midle ) ( 인라인계열만 적용되는 속성 )</li>
+          <li>엘리먼트 안쪽의 글자(인라인계열)을 중앙정렬하기: 
+            줄간격(line-height)을 높이와 동일하게 설정(한 줄일 경우만 사용가능)</li>
+          <li>글자(인라인계열)을 수평정렬 할 경우 부모요소에서 text-align 속성을 이용한다.</li>
+        </ul>
+        <div class="ex1">
+          <span>span1</span>
+          <span>span2</span>
+          <span>span3</span>
+        </div><!-- ex1 -->
+      </article>
+      <hr>
+      <article>
+        <h3>block레벨의 수평정렬</h3>
+        <ul>
+          <li></li>
+        </ul>
+      </article>
+      <div class="ex2">
+        <div>div1</div>
+        <div>div2</div>
+      </div> <!-- ex2 -->
+    </section>
+    <hr>
+    <article class="ex3">
+      <div>span</div>
+    </article> <!--ex3-->
+    <hr>
+    <article class="ex4">
+      <div>span</div>
+    </article>
+    <hr>
+    <article class="ex5">
+      <span>span</span>
+      <span>span</span>
+    </article>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.ex1 button{
+  color: blue !important; /*우선순위 최상위*/
+}
+.ex3 .box.tt{
+  background-color: red;
+} /*.ex3이면서 tt이기도 한 애를 찾는다. 이름이 2개*/
+
+.ex4 div{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+/*.ex4 .bt1{
+  position: relative;
+  top: 0px;
+  left: 100px;
+}*/
+
+.ex5 span{
+  background-color: red;
+  
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>flex</h1>
+    <section class="section1">
+      <p>
+        자식요소의 레이아웃을 설계하는 목적임<br>
+        flex요소의 자식요소는 display속성이 유효하지 않다.
+      </p>
+      <h2>flex의 종류(디스플레이의 값이 플렉스)</h2>
+      <ul>
+        <li>
+          <h3>display:flex</h3>
+          <ul>
+            <li>(플렉스가 적용된)부모요소는 block레벨과 동일한 성격</li>
+            <li>자식들의 크기가 부모의 크기와 동일해진다.</li>
+          </ul>
+        </li>
+        <li>
+          display:inline-flex <!-- 자식의 넓이에 따라서 부모의 넓이가 바뀐다.-->
+          <ul>
+            <li>부모의 크기가 자식의 크기에 의해 설정된다.</li>
+            <li>부모의 크기를 지정하지 않는다.</li>
+            <li>자식의 크기를 %로 지정하지 않는다.</li>
+            <li>수평 레이아웃에만 사용한다.</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="ex1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="ex2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+
+    </section>
+    <hr>
+    <section>
+      <h2>flex-direction</h2>
+      <p>축의 방향과 시작점을 설정</p>
+      <ul>
+        <li>row, row-reverse<br>
+          (자식요소들은 높이가 동일해짐)</li>
+        <li>colomn, colomn-reverse<br>
+          (자식요소들은 넓이가 동일해짐)</li>
+      </ul>
+      <div class="ex3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="ex4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>aling-items</h2>
+      <p>축의 위치를 설정, 기본값(strech) 다른값을 주면 스트레치가 사라짐</p>
+      <div class="ex5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div> <!-- ex5 -->
+      <div class="ex6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+
+    </section>
+    <hr>
+    <section>
+      <h2>justify-content</h2>
+      <p>축을 기준으로 '자식요소'의 위치를 설정</p>
+      <ul>
+        <li>디폴트 : flex-start</li>
+        <li>center</li>
+        <li>flex-end</li>
+        <li>spce-between</li>
+      </ul>
+      <div class="ex7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="ex8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="ex9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>flex속성</h2>
+      <p>부모요소가 flex속성일 경우 자식요소에게 넓이를 설정하는 속성</p>
+      <ul>
+        <li>크기를 자동으로 설정</li>
+        <li>축이 row일 경우 넓이를 설정, 축이 col일 경우 높이를 설정</li>
+        <li>flex 속성의 값이 설정되면 크기를 지정할 수 없음</li>
+        <li>
+          flex계산요령 <br>
+          자식요소가 3개일 경우, 1,1,2를 지정할 경우<br>
+          <!-- (2/(1+1+2))*100 이 방법은 잘 안쓴다.-->
+          
+        </li>
+      </ul>
+      <div class="flex ex10">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div> <!-- ex10 -->
+      <hr>
+      <div class="flex ex11">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+
+    </section>
+    <hr>
+    <div class="ex12">
+      <div>
+        1
+      </div>
+      <div>
+        2 <br> 2 <br>
+      </div>
+      <div>
+        3 <br> 3 <br> 3 <br> 3 <br>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </main>
+</body>
+
+</html>

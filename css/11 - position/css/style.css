@@ -1,0 +1,93 @@
+
+
+/*
+
+.box{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.box1{
+  position: absolute;
+  top:calc(50% - 50px);
+  left: calc(50% - 50px);  왼쪽으로부터의 거리 
+  background:  yellow; 
+}
+
+.box1 div{
+  position: absolute;
+  width: 30px;
+  height: 30px; 
+  right: 0; /* 부모기준으로 오른쪽 상단 // 같은 포지션이 있어야 부모자식관계!
+  top:0;
+  background: plum;
+}
+
+.box2{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: magenta;
+}
+.box2 div{
+  position: absolute;
+  width: 30px;
+  height: 30px; 
+  left: 0; /* 부모기준으로 오른쪽 상단 // 같은 포지션이 있어야 부모자식관계!
+  bottom: 0;
+  background: green;
+}
+
+.box3{
+  text-align: center;
+  border: 1px solid black;
+}
+
+.box3 div{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background: gray;
+  padding: 30px;
+}
+
+.box3 div b{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: mediumspringgreen;
+}
+
+.box4{
+  position: relative;
+  width: 500px;
+  margin: 30px auto;
+  border: 1px solid black;
+}
+
+.box4 div{
+  right: 10px;
+  top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.abs{
+  position: absolute;
+  background: red;
+}
+
+.rel{
+  position: relative;
+  margin: 0 auto;
+  background: blue;
+} */
+
+.box1 div{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}

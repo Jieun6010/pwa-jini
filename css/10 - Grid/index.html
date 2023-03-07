@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <h1>grid system</h1>
+    <ul>
+      <li>
+        display속성이 grid인 컨테이너는 block레벨과 유사하다.<br>
+        grid 컨테이너의 자식요소는 기존의 display속성이 사라진다. 마진오토 X 
+      </li>
+      <li>
+        grid컨테이너의 격자 설정 <br>
+        display: grid;
+        grid-template-rows : repeat(갯수, 한 줄의 높이(auto, 1fr))
+        grid-template-columns : repeat(갯수, 한 칸의 높이(auto, 1fr))
+        gap: 그리드간의 여백 설정
+      </li>
+      <li>
+        grid를 설정 <br>
+        grid-row: 2 / 6 (2번째 줄에서 시작해서 5번째 줄에서 끝난다.) <br>
+        grid-columns: 2 / span 3 (2번째 칸에서 시작하는 3칸짜리) <br>
+        grid-area: 2 / 3 / 7 / 4 <br>
+        (2번째 줄에서 시작해서 6번째 줄에서 끝나면서<br>
+        3번째 칸에서 시작해서 3번째 칸에서 끝난다.) 
+        
+      </li>
+    </ul>
+    <hr>
+    <ul class="container1">
+      <li class="item1">1</li>
+      <li class="item2">2</li>
+      <li class="item3">3</li>
+      <li class="item4">4</li>
+      <li class="item5">5</li>
+    </ul>
+    <div class="text">
+      abc
+    </div>
+    <hr>
+    <ul class="container2">
+      <li class="item1">분기별실적</li>
+      <li class="item2"></li>
+      <li class="item3">1</li>
+      <li class="item4">2</li>
+      <li class="item5">3</li>
+      <li class="item6">4</li>
+      <li class="item7">5</li>
+      <li class="item8">6</li>
+      <li class="item9">7</li>
+      <li class="item10">8</li>
+      <li class="item11">1분기</li>
+      <li class="item12">2분기</li>
+      <li class="item13">3분기</li>
+      <li class="item14">4분기</li>
+      <li class="item15"></li>
+      <li class="item16"></li>
+      <li class="item17"></li>
+      <li class="item18"></li>
+      <li class="item19"></li>
+      <li class="item20"></li>
+      <li class="item21"></li>
+      <li class="item22"></li>
+
+      
+    </ul>
+  </main>
+</body>
+</html>

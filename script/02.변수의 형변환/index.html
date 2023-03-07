@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /*
+    parseInt('5입니다') -> 5  이렇게 정수(소수점이 없는 숫자)로 바꿔줌 / 뒤쪽에 글자가 있으면 다 뜯어버림
+    parseInt('숫자5')  -> Nan         다만, 앞에 글자가 있으면 NaN 이 뜸
+
+    1. 문자열 안에 있는 수를 정수로 바꾼다.
+    2. 뒤쪽에 있는 글자를 뜯어낸다.
+    3. 숫자가 앞에 있으면 Nan을 뱉어낸다.
+    */
+
+    /*
+    var a = prompt('첫번째 숫자를 입력하세요') //1
+    var b = prompt('두번째 숫자를 입력하세요') //2
+    var c = parseInt(a) + parseInt(b) //1 + 2
+
+    var a = parseInt(prompt('첫번째 숫자를 입력하세요')) // 1
+    var b = parseInt(prompt('두번째 숫자를 입력하세요')) //2
+    var c = a + b // 1 + 2
+    
+    alert(c)
+    */
+
+    /*
+    var a = prompt('첫번째 정수나 소수를 입력하세요')
+    var b = prompt('두번째 정수나 소수를 입력하세요')
+    var c = parseFloat(a) + parseFloat(b)
+    alert(c)
+    */
+
+    /* 나머지 구하기 예제 9 / 2 = 1 */
+
+    /*
+    var a = prompt('나누어질 수(정수)를 입력하세요') //14  
+    var b = prompt('나눌 수(정수)를 입력하세요') //5
+    //2
+    var c = a % b
+    alert(c)
+    */
+   
+    /*
+    var a = prompt('가지고 있는 금액을 입력하세요') //1000
+    var b = prompt('물건 가격을 입력하세요') //300
+    //구입가능갯수:3, 잔돈:100
+    var c = parseInt(a/b) //3
+    var d = a % b //100
+    alert('구입가능갯수:' + c + ',' + '잔돈:' + d)
+    */
+    
+    /* 평균 구하기 문제 */
+
+    /*
+    var a = prompt('국어점수를 입력하세요') //40
+    var b = prompt('영어점수를 입력하세요') //30
+    var c = prompt('수학점수를 입력하세요') //30
+    //총점은 100점, 평균은 33.3
+    var d = parseInt(a) + parseInt(b) + parseInt(c)
+    var f = parseInt((d / 3)*10) / 10 //33.333333333
+  
+
+    alert('총점은' + d + ',' + '평균은' + f)
+
+    1.
+    컨테이너 넓이 입력받기 1000
+    그리드 갯수 3
+    그리드 한 칸의 넓이 300
+    3개 합하면 하나의 여백넓이가 나옴. 50
+
+    2.
+    컨테이너 넓이 입력받기 1000
+    여백의 갯수 입력 2
+    여백의 넓이 입력 50
+    한 칸의 넓이 구하기 300
+    */
+
+    /*
+    var a = prompt('컨테이너의 넓이를 입력하세요') //1000
+    var b = prompt('그리드 갯수를 입력하세요') // 2
+    var c = prompt('그리드 넓이를 입력하세요') //50
+    
+    var d = a - b * c
+    var e = a / (b -1)
+    alert(e)
+    */
+   
+    /*
+    var 컨테이너넓이 = prompt('컨테이너 넓이')
+    var 여백의갯수 = prompt('여백의 갯수')
+    var 여백의넓이 = prompt('여백의 넓이')
+    
+    var 그리드전체넓이 = 컨테이너넓이 - 여백한칸의넓이 * 여백의갯수
+    var 그리드하나의넓이 = 그리드전체넓이 / (여백의갯수+1)
+
+    alert(그리드하나의넓이)
+    */
+
+    var a = prompt('첫번째수를입력') //30
+    var b = prompt('두번째수를입력') //60
+    
+    var c = ((a / b) * 100)
+    alert(c)//30은 60의 %입니다
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <section> <!-- 위쪽은 다 부모-->
+      <h1>
+        <abbr>Html</abbr> <!-- -->
+        <small>Hyper Markeup Language</small>
+      </h1>
+      <p>웹문서의 DOM구조를 설계하는 마크업 언어를 의미한다.</p>
+    </section>
+
+    <section>
+      <h2>html문서의 특징<h2>
+          <ul>
+            <li>요소(element), 태그(tag), 속성(attribute)이 존재한다.</li>
+            <li>Node(parent(부모), children(자식), decendent(자손), siblings(동급/형제자매))가 존재한다.</li>
+            <li>Node는 정해진 구조를 준수해야 한다.</li>
+          </ul>
+    </section>
+    <hr>
+
+    <section>
+      <h2>시멘틱 요소</h2>
+      <article>
+        <h3>1. 구획(범위)요소 / 영역을 나누는 !</h3>
+        <ul>
+          <li>main : 웹문서의 주요내용</li>
+          <li>section, article : 제목과 내용을 포함하는 주제를 출력하는 영역</li>
+          <li>header : 주로 웹문서 상단의 로고나 정체성을 나타내고 표현하는 영역</li>
+          <li>footer : 주로 웹문서 하단부분에 표현 / 사이트의 보조적인 정보를 출력하는 영역</li>
+          <li>aside : 사이트의 부수적인 정보나 기능을 출력하는 영역 / 사이드 바 (광고도 포함) </li>
+          <li>nav : 메뉴 기능을 제공하는 영역</li>
+          <li>div : 레이아웃 영역(무언가 들어가있지는 않지만 아무거나 넣을 수 있음)</li>
+
+        </ul>
+
+
+      </article>
+
+      <article>
+        <h3>2. 다양한 시멘틱 요소(의미가 있다는 ! 구조적인) </h3>
+        <ul>
+          <li>em : <em>중요함을 나타내고 싶을 때</em></li>
+          <li>strong, mark : <strong>시각적인</strong> <mark>강조</mark>를 의미</li>
+          <li>small : <small>보조적인 의미</small></li>
+          <li>i : <i>구분, 다름(차이)의 목적</i></li>
+          <li>blockquote : <blockquote>다른 사람의 글을 퍼올 때 / 인용</blockquote>
+          </li>
+          <li>cite : <cite>인용처(출처 : mbc) </cite></li>
+          <li>span : <span>의미가 없음을 의미 / 주로 디자인때문에 사용 </span></li>
+          <li>time : 시간표시</li>
+          <li>address : 주소, 전화, (주로 웹사이트에서 회사 번호나 주소 위치 등을 표시할 때)</li>
+          <li>abbr : 약어 / 예 : 제 이름은 박지은인데 <abbr>pje</abbr>로 불러주세요</li>
+          <li>dfn : 용어 /예 : <dfn>pje</dfn>는 박지은을 의미해요</li>
+          <li></li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>3. 물리적 요소 ( 시각적인 변화 ) / css가 있기때문에 굳이 쓰지 않아도 되는 ! </h3>
+        <ul>
+          <li>b : <b>두꺼운 글자</b> </li>
+          <li>u : <u>밑줄</u></li>
+          <li>strike : <strike>ㅇ...</strike></li>
+          <li>sup : <sup>윗첨자</sup> 이건 써야함 2<sup>2</sup> (2의 2승..) </li>
+          <li>sub : <sub>아래첨자</sub> 이것두 쓰긴 하겠지 !</li>
+        </ul>
+
+      </article>
+
+    </section>
+    <hr>
+    <section>
+      <h2>escaping 문자</h2>
+      <p>마크업에서 허락되지 않는 문자를 표기하는 유니코드</p>
+      <ul>
+        <li>&lt; </li>
+        <li>&gt; </li>
+        <li>&amp; </li>
+        <li>&copy; </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>

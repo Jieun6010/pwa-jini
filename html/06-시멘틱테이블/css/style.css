@@ -1,0 +1,58 @@
+table{
+  border-collapse: collapse;
+}
+td,th{
+  border: 1px solid black;
+  box-sizing: border-box;
+} /* 표의 기본 모양 / 모든 표에 공통으로 적용할 */ 
+
+.table1, .table2{
+  margin: auto; /* 표 자체를 중앙으로 옮기기*/
+}
+
+
+.table1 td, .table1 th{
+  width: 100px;
+  height: 40px;
+  text-align: center; 
+  /* font-weight: normal; 기본은 볼드*/
+  /* vertical-align: middle;*/
+}
+
+.table1 thead th{
+  background-color: black;
+  color: white;
+}
+
+.table1 tbody th{
+  background-color: gray;
+} 
+
+.table2{
+  margin: 0 auto;
+}
+
+.table2 tr > *{
+  height: 40px;
+  text-align: center;
+}
+
+.table2 td:first-child{
+  width: 70px;
+}
+
+.table2 td:first-child ~ *{
+  width: 100px;
+}
+
+
+.table2 th{
+  background-color: blue;
+  color: white;
+}
+
+.table2 [scope='rowgroup']{
+  background-color: yellow;
+  color: black;
+   
+}

@@ -1,0 +1,129 @@
+h1{
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.section1 span,
+.section1 b{
+  width: 300px;
+  background-color: yellow;
+  vertical-align: bottom;
+}
+
+.ex1 span{
+  display: inline-block;
+  width: 80px;
+  background-color: yellow;
+}
+
+.ex1 span:nth-child(1){
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+}
+
+.ex1 span:nth-child(2){
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.ex1 span:nth-child(3){
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.ex2{
+  
+  width: 300;
+  height: 300px;
+  line-height: 300px;
+  margin:0 auto;
+  text-align:center;
+  background-color: #CCC;
+
+}
+
+.ex2 div{
+  display: inline block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: yellow;
+}
+
+.ex2 div:first-child{
+  height: 100px;
+  line-height: 100px;
+}
+
+.ex2 div:last-child{
+  height: 200px;
+  line-height: 200px;
+}
+
+.ex3{
+  width: 500px;
+  height: 100px;
+  background-color: yellow;
+  margin: auto;
+}
+
+.ex3 div{
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  display: inline block;
+  background-color: red;
+  text-align: center;
+  line-height: 100px;
+}
+
+.ex4{
+  width: 1000px;
+  background-color: yellow;
+}
+
+.ex4 div{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  display: inline block;
+  line-height: 100px;
+  margin-left: auto;
+}
+
+.ex5{
+  width: 1000px;
+  height: 100px;
+  background-color: yellow;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.ex5 {
+  background-color: yellow;
+}
+
+.ex5 span{
+  display: inline-block;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  
+}
+
+.ex5 span:nth-child(1){
+  height: 100px;
+  line-height: 100px;
+}
+
+.ex5 span:nth-child(2){
+  height: 100px;
+  line-height: 100px;
+}
