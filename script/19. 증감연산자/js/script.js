@@ -49,7 +49,7 @@ $(function () {
 })
 
 // 스코프 목적으로 ready이벤트 다시 선언
-$(function(){
+$(function () {
   var n = 1
 
   function fn(param) {
@@ -58,6 +58,7 @@ $(function(){
     if (n < 1) n = 5
     $(`.ex2 .output`).text(n)
   }
+
   // 증가버튼
   $(`.ex2 .increase`).click(function () {
     fn(1)
@@ -69,11 +70,61 @@ $(function(){
   })
 })
 
-$(function(){
+$(function () {
   var rdn
-  rdn = Math.floor(Math.random()*10)
+  rdn = Math.floor(Math.random() * 10)
   $(`.ex3_1 .num1`).val(rdn)
-  rdn = Math.floor(Math.random()*10)
+  rdn = Math.floor(Math.random() * 10)
   $(`.ex3_1 .num2`).val(rdn)
+  rdn = Math.floor(Math.random() * 10)
+  $(`.ex3_2 .num1`).val(rdn)
+  rdn = Math.floor(Math.random() * 10)
+  $(`.ex3_2 .num2`).val(rdn)
+  rdn = Math.floor(Math.random() * 10)
+  $(`.ex3_3 .num1`).val(rdn)
+  rdn = Math.floor(Math.random() * 10)
+  $(`.ex3_3 .num2`).val(rdn)
+  rdn = Math.floor(Math.random() * 10)
+  $(`.ex3_4 .num1`).val(rdn)
+  rdn = Math.floor(Math.random() * 10)
+  $(`.ex3_4 .num2`).val(rdn)
 
+
+  $(`.ex3 button`).click(function () {
+
+    var num1 = parseInt($(`.ex3_1 .num1`).val())
+    var num2 = parseInt($(`.ex3_1 .num2`).val())
+    var sum1 = num1 + num2
+
+    var num3 = parseInt($(`.ex3_2 .num1`).val())
+    var num4 = parseInt($(`.ex3_2 .num2`).val())
+    var sum2 = num3 + num4
+
+    var num5 = parseInt($(`.ex3_3 .num1`).val())
+    var num6 = parseInt($(`.ex3_3 .num2`).val())
+    var sum3 = num5 + num6
+
+    var num7 = parseInt($(`.ex3_4 .num1`).val())
+    var num8 = parseInt($(`.ex3_4 .num2`).val())
+    var sum4 = num7 + num8
+    
+    $(`.ex3 .output`).text(sum1, sum2, sum3, sum4)
+  })
+
+  /*
+  $(`.ex3 input`).click(function () {
+    var num1 = $(`.ex3_1 .num1`).val()
+    var num2 = $(`.ex3_1 .num2`).val()
+    var num3 = $(`.ex3_2 .num1`).val()
+    var num4 = $(`.ex3_2 .num2`).val()
+    var sum1 = $(`.ex3_3 .num1`).val()
+    var sum2 = $(`.ex3_3 .num1`).val()
+    var sum3 = $(`.ex3_4 .num1`).val()
+    var sum4 = $(`.ex3_4 .num1`).val()
+  })
+
+  $(`.ex3 input`).click(){
+
+  }
+  */
 }) //ready
