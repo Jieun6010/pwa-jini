@@ -1,0 +1,152 @@
+.ex1 {
+  text-align: center;
+}
+
+.ex1 span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: rebeccapurple;
+  opacity: 0.5;
+  /* opacity는 투명도 ! 100프로가 1이니까 0.5 이렇게 적어도됨
+  display:none; 이거는 아예 형태를 없애버리는것 !*/
+  cursor: pointer;
+  /* 커서를 손가락모양으로 바꿔준다.*/
+}
+
+.ex1 span:nth-child(2) {
+  /* 1번 3번은 그대로 두고 2번만 커져야한다.*/
+  border: 1px solid black;
+  transform: scale(1.5) rotate(45deg);
+  /* scale(2) 2배(200%)로커지거나 작아지는 것*/
+  /* rotate(45) 45도 회전하는 것 ! 시계방향이 + / 반시계방향이 -  / deg는 (몇 도)
+  translate()는 ()는 xy를 다 말하는것 ! (x먼저,Y) 위치를 바꾸는것*/
+  translate: (0px, 0);
+}
+
+.ex1 span:nth-child(3) {
+  border: 1px solid black;
+  position: relative;
+  /* relative는 자기자리는 그대로 유지하되 포지션만 주고싶을때 사용한다.*/
+  z-index: 1;
+  /* 포지션이나 트랜스폼이 없으면 z-index가 적용되지않는다.*/
+}
+
+.ex2 {
+  position: relative;
+  margin: 50px 0;
+  border: 1px solid black;
+}
+
+.ex2 div {
+  width: 50%;
+  /* 부모크기에 50%라는 얘기다!*/
+  height: 50px;
+  background: paleturquoise;
+}
+
+.ex2 span {
+  position: absolute;
+  /* 우리족보에서 완전 무시하구싶을때 ! 쫓아내고싶을때 쓴다.*/
+  left: 50%;
+  top: 0;
+  background: plum;
+  transform: translateX(-50%);
+  /* 트랜스폼에서의 50%는 자기 기준이란 뜻이다. 자신의 반땅! 
+  트랜스폼을 제외한 퍼센트들은 모두 부모기준이지만 트랜스폼만 자기 기준! */
+}
+
+.ex3 span {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+  background: #CCC;
+  opacity: 0.3;
+  transition: opacity .5s;
+  /* opacity가 변할때 0.5초를 할당하겠다는 뜻 
+  all이라고 하면 너가 할 수 있는거 다 해라!*/
+}
+
+.ex3 span:hover {
+  /*마우스로 지정한 span*/
+  opacity: 1;
+  background: red;
+  color: white;
+}
+
+.ex4 {
+  position: relative;
+  border: 1px solid black;
+  margin: 50px auto;
+}
+
+.ex4 div {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  /*left: calc(100% - 50px);*/
+  background: linear-gradient(red, blue);
+  /*색이 변하는거 ! 그라데이션처럼 */
+  left: 0;
+  transition: border-radius 0.5s, left 2s, transform 2s;
+  transition-delay: 2s, 0s, 0s;
+  /* 몇 초 후 굴러가라*/
+}
+
+.ex4 div.active {
+  left: calc(100% - 50px);
+  transition: 0s, 0.5s, 0.5s;
+  transform: rotate(1000deg);
+  border-radius: 50%;
+}
+
+
+.ex5 {
+  position: relative;
+  text-align: center;
+  margin: 50px 0;
+  border: 1px solid black;
+}
+
+.ex5:hover div {
+  opacity: 1;
+}
+
+.ex5 div {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  color: #FFF;
+  line-height: 100px;
+}
+
+.ex6:hover div {
+  opacity: 1;
+}
+
+.ex6 {
+  margin: 50px 0;
+  border: 1px solid black;
+
+}
+
+
+.ex6:hover div:nth-child(2) {
+  transition-delay: 0.5s;
+}
+
+.ex6:hover div:nth-child(3) {
+  transition-delay: 1s;
+}
+
+
+.ex6 div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: bisque;
+  opacity: 0;
+  transform-origin: all 1s;
+}

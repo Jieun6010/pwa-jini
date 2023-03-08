@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="./js/script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>변형과 모션</h1>
+    <section>
+      <h2>transform</h2>
+      <ul>
+        <li>레이아웃에는 변화가 없는 상태에서 렌더링에 변화를 준다.</li>
+        <li> transform: scale(2) rotate:(45deg) translate:(x,y)이렇게 계속 이어붙일 수 있다.</li>
+        <li> transform, opacity, position 프로퍼티가 적용되면 z-index가 적용돼서 사용할 수 있게됨.</li>
+        <li>transform의 %기준은 해당 요소의 크기 기준이다. </li>
+      </ul>
+      <div class="ex1">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+      <hr>
+      <div class="ex2">
+        <div></div>
+        <span>가나다라마<br>바사</span>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>transition () 변환효과</h2>
+      <ul>
+        <li>css 프로퍼티가 변하는 시간을 설정하는 기능이다.</li>
+        <li>transition:프로퍼티 || all 시간s</li>
+        <li>transition은 숫자단위로 설정이 가능한 속성에만 적용가능하다.</li>
+        <li>transition-delay : 프로퍼티간의 transition 시작 시간 지연 </li>
+        <li>transition-delay효과를 구현하려면 all을 사용하지 말 것 <br> 
+          귀찮더라도 하나씩 별도로 지정을 해줘야한다. </li>
+      </ul>
+
+
+
+      <div class="ex3">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+
+      <div class="ex4">
+        <button>버튼</button>
+        <div></div>
+      </div>
+
+      <div class="ex5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+
+      <div class="ex6">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    </section>
+  </main>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
